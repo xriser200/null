@@ -100,7 +100,7 @@
             left: 0px;
             font-size: 25px;
         }
-       
+
         .create {
             position: relative;
             top: 62px;
@@ -160,100 +160,137 @@
                 opacity: 1;
             }
         }
+        .login {
+            font-size: 30px;
+            color: white;
+            position: relative;
+            text-align: center;
+            top: 174px;
+            font-weight: 500;
+        }
+        .loginform {
+            position: relative;
+            top: 250px;
+            
+        }
+        .user {
+            position: relative;
+            top: 100px;
+            display: block;
+            margin: auto;
+            width: 350px;
+            height: 40px;
+            border-radius: 12px;
+            background-color: grey;
+            
+        }
+        .user::placeholder {
+            color: white;
+            position: absolute;
+            left: 8px;
+            top: 12px;
+            
+        }
+        .mail {
+            position: relative;
+            top: 150px;
+            display: block;
+            margin: auto;
+             width: 350px;
+            height: 40px;
+            border-radius: 12px;
+            background-color: grey;
+            
+        }
+        .mail::placeholder {
+            color: white;
+            position: absolute;
+            left: 8px;
+            top: 12px;
+            
+        }
+        .pass {
+            position: relative;
+            top: 200px;
+            display: block;
+            margin: auto;
+             width: 350px;
+            height: 40px;
+            border-radius: 12px;
+            background-color: grey;
+            
+        }
+        .pass::placeholder {
+            color: white;
+            position: absolute;
+            left: 8px;
+            top: 12px;
+            
+        }
+        .repeat {
+            position: relative;
+            top: 250px;
+            display: block;
+            margin: auto;
+             width: 350px;
+            height: 40px;
+            border-radius: 12px;
+            background-color: grey;
+            
+        }
+        .repeat::placeholder {
+            color: white;
+            position: absolute;
+            left: 8px;
+            top: 12px;
+            
+        }
+        .submit {
+            position: relative;
+            top: 300px;
+            display: block;
+            margin: auto;
+            width: 275px;
+            height: 35px;
+            border-radius: 12px;
+            background-color: grey;
+            color: white;
+        }
     </style>
     <header>
-        <h1 class="logo">Nulled</h1>
+            <h1 class="title">Nulled</h1>
     </header>
     <body>
-        
-        <h2 class="title">Nudes von xnele_15</h2>
-        <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-    <div class="numbertext">1 / 9</div>
-    <img class="melina1" src="https://drive.google.com/thumbnail?id=1umNFEuNkV4xg-LMHz5GJpXgqH3VrmPB6" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
+        <h2 class="login">Login</h2>
+        <div class="loginform">
+            <form method="post" class="login1">
+                <input
+                    type="text"
+                    class="user"
+                    name="user"
+                    placeholder="Username"
+                    required   />
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 9</div>
-    <img class="melina2" src="https://drive.google.com/thumbnail?id=17ieqQrNGF5pr5UGXw6iB_mF0xx0cKBlA" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 9</div>
-    <img class="melina3" src="https://drive.google.com/thumbnail?id=1Wj-8dGZny0_WpfKgdlYyq5gr5S5Ku-ty" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 9</div>
-                <div class="container">
-                    <h5 class="need">
-                        You need to login<br />
-                        or create an Account<br />
-                        to continue
-                    </h5>
-                    <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-                showSlides((slideIndex += n));
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-                showSlides((slideIndex = n));
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {
-                    slideIndex = 1;
-                }
-                if (n < 1) {
-                    slideIndex = slides.length;
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(
-                        " active",
-                        ""
-                    );
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-        </script>
-                    <center>
-                        <a href="https://0b0d-93-227-198-11.ngrok-free.app">
-                        <button class="loginbtn" href="">Login</button>
-                        </a>
-                        <a href="https://0b0d-93-227-198-11.ngrok-free.app">
-                            <button class="create">Create an Account</button>
-                        </a>
-                    </center>
-                </div>
-            </div>
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br />
-
-        <!-- The dots/circles -->
-        <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+                <input
+                    type="email"
+                    class="mail"
+                    name="mail"
+                    placeholder="E-Mail"
+                       required/>
+                <input
+                    type="password"
+                    class="pass"
+                    name="password"
+                    placeholder="Password"
+                       required/>
+                <input
+                    type="password"
+                    class="repeat"
+                    name="rptpassword"
+                    placeholder="Repeat your Passwort"
+                       required/>
+                <button class="submit" type="submit">Create Account</button>
+            </form>
         </div>
     </body>
 </html>
-
